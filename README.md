@@ -29,42 +29,25 @@ This project is a job search application built with React Native and Expo. It le
 
 This file serves as the entry point for the application. It loads custom fonts, prevents the splash screen from auto-hiding until fonts are loaded, and sets up the main layout with a search bar and job listings.
 
-**_layout.js:**
+**_layout.js:** It sets up the root layout using react-native-gesture-handler, SafeAreaProvider, and expo-router's Stack.
 
-It sets up the root layout using react-native-gesture-handler, SafeAreaProvider, and expo-router's Stack.
-
-**[id].js** (two instances):
-
-One of these files is likely handling job details, fetching job data using useRequest hook, and displaying job information.
+**[id].js** (two instances):One of these files is likely handling job details, fetching job data using useRequest hook, and displaying job information.
 The other might be dealing with search results or other dynamic content based on the ID parameter in the URL.
 
-**package.json:**
+**package.json:** Defines the project's dependencies and scripts, including React Native, Expo, and other libraries required for the project.
 
-Defines the project's dependencies and scripts, including React Native, Expo, and other libraries required for the project.
+**babel.config.js:** Configures Babel with the babel-preset-expo to ensure proper transpiling of JavaScript code.
 
-**babel.config.js:**
+**useRequest.js:** A custom hook for making API requests using axios. It handles loading state, errors, and data fetching.
 
-Configures Babel with the babel-preset-expo to ensure proper transpiling of JavaScript code.
+**reset-project.js:** A script to reset the project to a blank state by moving the /app directory and creating new default files for index.js and _layout.js.
 
-**useRequest.js:**
+**data.js:** Contains static data such as job types and tab names used throughout the application.
 
-A custom hook for making API requests using axios. It handles loading state, errors, and data fetching.
+**icons.js:** Exports a collection of icons used in the application.
 
-**reset-project.js:**
+**theme.js:** Defines the application's theme, including colors, sizes, fonts, and shadows.
 
-A script to reset the project to a blank state by moving the /app directory and creating new default files for index.js and _layout.js.
-
-**data.js:**
-
-Contains static data such as job types and tab names used throughout the application.
-
-**icons.js:**
-
-Exports a collection of icons used in the application.
-
-**theme.js:**
-
-Defines the application's theme, including colors, sizes, fonts, and shadows.
 
 **Components:**
 
